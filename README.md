@@ -8,7 +8,7 @@ The intention is to run this script in a cron tab so a record stays up to date
 The script requires [python-cloudflare](https://github.com/cloudflare/python-cloudflare#installation).
 
 ```
-usage: cloudfareddns.py [-h] --zone-name ZONE_NAME --record-name RECORD_NAME
+usage: cloudflareddns.py [-h] --zone-name ZONE_NAME --record-name RECORD_NAME
 
 Dynamically update a cloudflare A record to the public ip of the host running the script
 
@@ -23,7 +23,7 @@ options:
  Sample:
 
  ```
- cloudfareddns.py --zone-name mydomain.com --record-name awesome.mydomain.com
+ cloudflareddns.py --zone-name mydomain.com --record-name awesome.mydomain.com
  ```
 
  This sample will update the A record of `awesome.mydomain.com` to match the public ip of the host running the script
